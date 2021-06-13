@@ -3,3 +3,6 @@ var Num = 25; //register matters for js, it's another variable
 var name = 'text'; //text variable
 var bool = true; //boolean variable
 console.log(bool); //show number in console
+
+var username = prompt("What's your name?"); //input data from user
+alert('Hello, ' + username); //merge two strings
