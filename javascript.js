@@ -5,4 +5,4 @@ var bool = true; //boolean variable
 console.log(bool); //show number in console
 
 var username = prompt("What's your name?"); //input data from user
-alert('Hello, ' + username); //merge two strings
+console.log('Hello, ' + username); //merge two strings
