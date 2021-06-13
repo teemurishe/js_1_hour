@@ -6,3 +6,8 @@ console.log(bool); //show number in console
 
 var username = prompt("What's your name?"); //input data from user
 console.log('Hello, ' + username); //merge two strings
+
+/* It's
+a
+multi-string
+comment */
