@@ -43,7 +43,7 @@ colors[3] = 'Grey'; //addng one more element to array
 document.write('<br>', colors[3]); //4th element is 3rd for js
 colors.push('Purple'); //another way to add element to array*/
 
-for (var num = 100; num >= 10; num -= 10) { //for cycle | var num = 100 is a value of the condition variable in the beginning | num >= 10 is condition for the ending
+/*for (var num = 100; num >= 10; num -= 10) { //for cycle | var num = 100 is a value of the condition variable in the beginning | num >= 10 is condition for the ending
     //num -=10 is the cycled action to reach the condition
     console.log(num);
 }
@@ -52,4 +52,29 @@ var numWhile = 5 //variable for while cycle
 while (numWhile < 158) { //condition for cycle would be truth
     numWhile ++; //action to make condition false
     console.log(numWhile);
+}*/
+
+numIf = 459 //variable for if/else
+if (numIf <= 618) { //condition for action
+    console.log('It\'s true!'); //action if the condition is truth | the \' construction is used to show the compilator 
+    //that the ' symbol in the text is not the ending of text for output in console, but just its part
+}
+
+if (numIf > 496) { //false condition
+    console.log('Second condition is truth too!'); //this action wouldn't be done
+}
+
+else {
+    console.log('Second condition is false.');
+}
+if (1 != 1) { //another foolish statement
+    console.log('What?!');
+}
+
+else if (15 == 15) { //if first statement is false, additional else if statement works
+    console.log('Ok, now it\'s true.');
+}
+
+else {
+    console.log('Else if isn\'t correct too!'); //this condition wouldn't work, because else if statement is correct
 }
