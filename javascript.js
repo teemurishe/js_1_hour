@@ -28,3 +28,9 @@ console.log(firstNum);
 
 document.write('<br>' + 'The PI number is ' + Math.PI); //pi number | the <br> is tag to write text on new line
 document.write('<br>' + 'The E number is ' + Math.E); //e number
+
+document.write('<br>' + Math.ceil(2.3)) //rounding number up
+document.write('<br>' + Math.floor(7.7)) //rounding number down
+document.write('<br>' + Math.round(6.4)) //rounding number following the rules
+document.write('<br>' + Math.round(3.9))
+document.write('<br>' + Math.abs(-16589)) //module of the number
