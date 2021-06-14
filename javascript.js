@@ -25,3 +25,6 @@ firstNum ++; //another way to add 1
 console.log(firstNum);
 firstNum --; //same for sabtracting 1
 console.log(firstNum);
+
+document.write('<br>' + 'The PI number is ' + Math.PI); //pi number | the <br> is tag to write text on new line
+document.write('<br>' + 'The E number is ' + Math.E); //e number
