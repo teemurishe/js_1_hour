@@ -2,7 +2,7 @@ var num = 51.5; //number variable
 var Num = 25; //register matters for js, it's another variable
 var name = 'text'; //text variable
 var bool = true; //boolean variable
-console.log(bool); //show number in console
+//console.log(bool); //show number in console
 
 /*var username = prompt("What's your name?"); //input data from user
 console.log('Hello, ' + username); //merge two strings*/
@@ -12,7 +12,7 @@ a
 multi-string
 comment */
 
-firstNum = 58; //two number variables
+/*firstNum = 58; //two number variables
 secondNum = 47;
 document.write('The result is ', firstNum + secondNum); //now numbers are added
 firstNum = firstNum + 52; //adding a number to variable
@@ -29,8 +29,27 @@ console.log(firstNum);
 document.write('<br>' + 'The PI number is ' + Math.PI); //pi number | the <br> is tag to write text on new line
 document.write('<br>' + 'The E number is ' + Math.E); //e number
 
-document.write('<br>' + Math.ceil(2.3)) //rounding number up
-document.write('<br>' + Math.floor(7.7)) //rounding number down
-document.write('<br>' + Math.round(6.4)) //rounding number following the rules
-document.write('<br>' + Math.round(3.9))
-document.write('<br>' + Math.abs(-16589)) //module of the number
+document.write('<br>' + Math.ceil(2.3)); //rounding number up
+document.write('<br>' + Math.floor(7.7)); //rounding number down
+document.write('<br>' + Math.round(6.4)); //rounding number following the rules
+document.write('<br>' + Math.round(3.9));
+document.write('<br>' + Math.abs(-16589)); //module of the number*/
+
+/*var colors = ['Red', 'Green', 'Blue']; //creating an array
+document.write('<br>', colors[0]); //first element is numbered as zero fo js
+var cars = new Array('Toyota', 'Zaporozhez', 'Mercedes', 'Lada', 'BMW'); //another way to create an array
+document.write('<br>', cars[3]); //4th element is 3rd for js
+colors[3] = 'Grey'; //addng one more element to array
+document.write('<br>', colors[3]); //4th element is 3rd for js
+colors.push('Purple'); //another way to add element to array*/
+
+for (var num = 100; num >= 10; num -= 10) { //for cycle | var num = 100 is a value of the condition variable in the beginning | num >= 10 is condition for the ending
+    //num -=10 is the cycled action to reach the condition
+    console.log(num);
+}
+
+var numWhile = 5 //variable for while cycle
+while (numWhile < 158) { //condition for cycle would be truth
+    numWhile ++; //action to make condition false
+    console.log(numWhile);
+}
