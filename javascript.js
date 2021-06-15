@@ -129,7 +129,7 @@ if (numIf >= 289 && boolIf != false || numIf == 289 || boolIf !=false) { //condi
         break;
 }*/
 
-function print(phrase) { //function is needed to do some actions in program manny times in different places | print is name of function, phrase is variable
+/*function print(phrase) { //function is needed to do some actions in program manny times in different places | print is name of function, phrase is variable
     //that is used in function for its actions and enetred by programmist
     console.log(phrase); //this is action with entered value/variable
 }
@@ -140,10 +140,31 @@ print(phrase); //another example: we can use some variable instead of string in 
 print('This is a phrase: ' + phrase) //we also can connect many text elements in this function with +
 print('This is a phrase: ', phrase) //not like this, because here only first phrase would be shown*/
 
-function sum(num1, num2) { //a bit more difficult function: two variables to work
+/*function sum(num1, num2) { //a bit more difficult function: two variables to work
     return num1 + num2; //return means: the function would get this value as variable
 }
 
 var numSum1 = 586; //two variables for test
 var numSum2 = 864;
-print('Sum is ' + sum(numSum1, numSum2)); //sum turns to variable with the value of sum of the two numbers we've given it it brackets
+print('Sum is ' + sum(numSum1, numSum2)); //sum turns to variable with the value of sum of the two numbers we've given it in brackets*/
+
+var timur = { //creating an object with a lot of parameters
+    name: 'Timur', //text parameter
+    age: 14, //number parameter
+    citizenships: ['Russia', 'Tolland'], //array parameter
+    adress: { //object in object)
+        country: 'Tolland',
+        city: 'Downster',
+        street: 'Bed st.',
+        building: 1
+    },
+    NameAge: function() { //function in object
+        return this.name + ', ' + this.age; //this. means that function takes parameter from the function it's placed in
+    }
+} //object is used to describe something with a lot of different characteristics, then you can call only the ones you need in program
+console.log(timur); //this would just show whole object in console
+document.write('Person\'s name: ', timur.name); //and now, we only call name characteristic
+document.write('<br>', 'Person\'s age: ', timur.age, ' years'); //analogically for age
+document.write('<br>', 'Person\'s city: ', timur.adress.country, ', ', timur.adress.city); //that's how to show characteristic from object in object
+//now try to write all other characteristics of this object: citizenships, street and building
+document.write('<br>', timur.NameAge()); //calling function from the object
