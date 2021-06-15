@@ -54,7 +54,7 @@ while (numWhile < 158) { //condition for cycle would be truth
     console.log(numWhile);
 }*/
 
-numIf = 459 //variable for if/else
+/*numIf = 459 //variable for if/else
 if (numIf <= 618) { //condition for action
     console.log('It\'s true!'); //action if the condition is truth | the \' construction is used to show the compilator 
     //that the ' symbol in the text is not the ending of text for output in console, but just its part
@@ -77,4 +77,16 @@ else if (15 == 15) { //if first statement is false, additional else if statement
 
 else {
     console.log('Else if isn\'t correct too!'); //this condition wouldn't work, because else if statement is correct
+}*/
+
+var bool = true; //variable for if operations with bools
+if (bool) { //this means: if (bool == true)
+    console.log(bool + ' is true') //action for bool == true
+}
+if (!bool) { //means if (bool == false)
+    console.log(bool + ' is false') //this action wouldn't run
+}
+
+else { //this condition would work
+    console.log(bool + ' is true!') //this would run
 }
