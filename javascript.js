@@ -134,8 +134,16 @@ function print(phrase) { //function is needed to do some actions in program mann
     console.log(phrase); //this is action with entered value/variable
 }
 
-var phrase = 'Some phrase to show the work of created function'; //example phrase
+/*var phrase = 'Some phrase to show the work of created function'; //example phrase
 print('Hello world!'); //if you know Python a bit, you would recognize this string
 print(phrase); //another example: we can use some variable instead of string in ''
 print('This is a phrase: ' + phrase) //we also can connect many text elements in this function with +
-print('This is a phrase: ', phrase) //not like this, because here only first phrase would be shown
+print('This is a phrase: ', phrase) //not like this, because here only first phrase would be shown*/
+
+function sum(num1, num2) { //a bit more difficult function: two variables to work
+    return num1 + num2; //return means: the function would get this value as variable
+}
+
+var numSum1 = 586; //two variables for test
+var numSum2 = 864;
+print('Sum is ' + sum(numSum1, numSum2)); //sum turns to variable with the value of sum of the two numbers we've given it it brackets
