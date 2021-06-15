@@ -94,7 +94,7 @@ else { //this condition would work
 var numIf = 362; //first if variable
 var boolIf = true; //second if variable
 
-if (numIf >= 289 && boolIf != false) { //&& is a symbol to make many conditions needed to run an action. there would be as much && as it's needed for programm
+/*if (numIf >= 289 && boolIf != false) { //&& is a symbol to make many conditions needed to run an action. there would be as much && as it's needed for programm
     console.log('bool is true and num is bigger than 289 or equal') //this action would run, because boolIf isn't false and numIf is bigger or equal with 289
 }
 
@@ -104,4 +104,27 @@ if (numIf == 289 || boolIf !=false) { //|| means OR: at least one of conditions 
 
 if (numIf >= 289 && boolIf != false || numIf == 289 || boolIf !=false) { //conditions could combinated, how it's shown here
     console.log('Wow, it works') //this would run, try to understand why ;)
+}*/
+
+switch (numIf) { //switch case is an alternative to if/else if/ else constructions when you need to find a value of variable: switch(numIf) means that we try
+    //to find the value of numIf variable
+    case 895: //case 895 means that we check if numIf == 895
+        alert('Number is 895!') //action if numIf == 895 (it wouldn't run)
+        break; //this is a command means that it's time to check next condition
+    case 362: //if numIf == 362
+        alert('Number is 362!') //this action would run
+    default: //this is alternative of else condition: if there is no correct case, this would run. This case is additional, you may ignore it, if you don't need it
+        alert('Number is undefined.') //this wouldn't run here, because case 362 is true
+        break;
+}
+
+switch (boolIf) { //now let's check bool's value
+    case false: //it isn't true case
+        alert('It\'s false!') //this wouldn't run)
+        break;
+    case 'another case': //thi is not correct condition too
+        alert('Hello dynamic typization!') //this wouldn't run)
+    default: //this case would run, because all other cases aren't correct
+        alert('Bool is undefined.') //now we'll see only this message
+        break;
 }
