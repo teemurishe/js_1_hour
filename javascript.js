@@ -79,7 +79,7 @@ else {
     console.log('Else if isn\'t correct too!'); //this condition wouldn't work, because else if statement is correct
 }*/
 
-var bool = true; //variable for if operations with bools
+/*var bool = true; //variable for if operations with bools
 if (bool) { //this means: if (bool == true)
     console.log(bool + ' is true') //action for bool == true
 }
@@ -89,4 +89,19 @@ if (!bool) { //means if (bool == false)
 
 else { //this condition would work
     console.log(bool + ' is true!') //this would run
+}*/
+
+var numIf = 362; //first if variable
+var boolIf = true; //second if variable
+
+if (numIf >= 289 && boolIf != false) { //&& is a symbol to make many conditions needed to run an action. there would be as much && as it's needed for programm
+    console.log('bool is true and num is bigger than 289 or equal') //this action would run, because boolIf isn't false and numIf is bigger or equal with 289
+}
+
+if (numIf == 289 || boolIf !=false) { //|| means OR: at least one of conditions would be true
+    console.log('at least one of conditions is correct') //action would run because boolIf isn't false, anthough numIf isn't 289
+}
+
+if (numIf >= 289 && boolIf != false || numIf == 289 || boolIf !=false) { //conditions could combinated, how it's shown here
+    console.log('Wow, it works') //this would run, try to understand why ;)
 }
