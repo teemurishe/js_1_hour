@@ -168,3 +168,16 @@ document.write('<br>', 'Person\'s age: ', timur.age, ' years'); //analogically f
 document.write('<br>', 'Person\'s city: ', timur.adress.country, ', ', timur.adress.city); //that's how to show characteristic from object in object
 //now try to write all other characteristics of this object: citizenships, street and building
 document.write('<br>', timur.NameAge()); //calling function from the object
+
+var alice = new Object(); //another way to create object
+alice.name = 'Alice'; //adding elements to object
+alice.age = 6;
+alice.toys = ['Cat', 'Dog', 'Dinosaur'];
+alice.NameAge = function() { //adding function to object
+    return this.name + ', ' + this.age + ' years' //actions for function
+}
+document.write('<br>'); //space between Timur and Alice
+document.write('<br>', 'Person\'s name: ', alice.name); //calling characteristics for Alice
+document.write('<br>', 'Person\'s age: ', alice.age, ' years');
+document.write('<br>', 'Person\'s toys: ', alice.toys[0], ', ', alice.toys[1], ', ', alice.toys[2]); //how to call elements from array in object
+document.write('<br>', alice.NameAge()); //function from object
