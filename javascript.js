@@ -181,3 +181,13 @@ document.write('<br>', 'Person\'s name: ', alice.name); //calling characteristic
 document.write('<br>', 'Person\'s age: ', alice.age, ' years');
 document.write('<br>', 'Person\'s toys: ', alice.toys[0], ', ', alice.toys[1], ', ', alice.toys[2]); //how to call elements from array in object
 document.write('<br>', alice.NameAge()); //function from object
+
+function Parent(role, name, age, gender, work) { //last way to create an obect with constructor
+    this.role = role
+    this.name = name
+    this.age = age
+    this.gender = gender
+    this.work = work
+}
+
+
