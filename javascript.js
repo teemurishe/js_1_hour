@@ -81,50 +81,61 @@ else {
 
 /*var bool = true; //variable for if operations with bools
 if (bool) { //this means: if (bool == true)
-    console.log(bool + ' is true') //action for bool == true
+    console.log(bool + ' is true'); //action for bool == true
 }
 if (!bool) { //means if (bool == false)
-    console.log(bool + ' is false') //this action wouldn't run
+    console.log(bool + ' is false'); //this action wouldn't run
 }
 
 else { //this condition would work
-    console.log(bool + ' is true!') //this would run
+    console.log(bool + ' is true!'); //this would run
 }*/
 
-var numIf = 362; //first if variable
-var boolIf = true; //second if variable
+/*var numIf = 362; //first if variable
+var boolIf = true; //second if variable*/
 
 /*if (numIf >= 289 && boolIf != false) { //&& is a symbol to make many conditions needed to run an action. there would be as much && as it's needed for programm
-    console.log('bool is true and num is bigger than 289 or equal') //this action would run, because boolIf isn't false and numIf is bigger or equal with 289
+    console.log('bool is true and num is bigger than 289 or equal'); //this action would run, because boolIf isn't false and numIf is bigger or equal with 289
 }
 
 if (numIf == 289 || boolIf !=false) { //|| means OR: at least one of conditions would be true
-    console.log('at least one of conditions is correct') //action would run because boolIf isn't false, anthough numIf isn't 289
+    console.log('at least one of conditions is correct'); //action would run because boolIf isn't false, anthough numIf isn't 289
 }
 
 if (numIf >= 289 && boolIf != false || numIf == 289 || boolIf !=false) { //conditions could combinated, how it's shown here
-    console.log('Wow, it works') //this would run, try to understand why ;)
+    console.log('Wow, it works'); //this would run, try to understand why ;)
 }*/
 
-switch (numIf) { //switch case is an alternative to if/else if/ else constructions when you need to find a value of variable: switch(numIf) means that we try
+/*switch (numIf) { //switch case is an alternative to if/else if/ else constructions when you need to find a value of variable: switch(numIf) means that we try
     //to find the value of numIf variable
     case 895: //case 895 means that we check if numIf == 895
-        alert('Number is 895!') //action if numIf == 895 (it wouldn't run)
+        alert('Number is 895!'); //action if numIf == 895 (it wouldn't run)
         break; //this is a command means that it's time to check next condition
     case 362: //if numIf == 362
-        alert('Number is 362!') //this action would run
+        alert('Number is 362!'); //this action would run
     default: //this is alternative of else condition: if there is no correct case, this would run. This case is additional, you may ignore it, if you don't need it
-        alert('Number is undefined.') //this wouldn't run here, because case 362 is true
+        alert('Number is undefined.'); //this wouldn't run here, because case 362 is true
         break;
-}
+}*/
 
-switch (boolIf) { //now let's check bool's value
+/*switch (boolIf) { //now let's check bool's value
     case false: //it isn't true case
-        alert('It\'s false!') //this wouldn't run)
+        alert('It\'s false!') //this wouldn't run);
         break;
     case 'another case': //thi is not correct condition too
-        alert('Hello dynamic typization!') //this wouldn't run)
+        alert('Hello dynamic typization!'); //this wouldn't run)
     default: //this case would run, because all other cases aren't correct
-        alert('Bool is undefined.') //now we'll see only this message
+        alert('Bool is undefined.'); //now we'll see only this message
         break;
+}*/
+
+function print(phrase) { //function is needed to do some actions in program manny times in different places | print is name of function, phrase is variable
+    //that is used in function for its actions and enetred by programmist
+    console.log(phrase); //this is action with entered value/variable
 }
+
+var phrase = 'Some phrase to show the work of created function'; //example phrase
+print('Hello world!'); //if you know Python a bit, you would recognize this string
+print(phrase); //another example: we can use some variable instead of string in ''
+print('This is a phrase: ' + phrase) //we also can connect many text elements in this function with +
+print('This is a phrase: ', phrase) //not like this, because here only first phrase would be shown
