@@ -4,15 +4,15 @@ var name = 'text'; //text variable
 var bool = true; //boolean variable
 //console.log(bool); //show number in console
 
-/*var username = prompt("What's your name?"); //input data from user
-console.log('Hello, ' + username); //merge two strings*/
+var username = prompt("What's your name?"); //input data from user
+console.log('Hello, ' + username); //merge two strings
 
 /* It's
 a
 multi-string
 comment */
 
-/*firstNum = 58; //two number variables
+firstNum = 58; //two number variables
 secondNum = 47;
 document.write('The result is ', firstNum + secondNum); //now numbers are added
 firstNum = firstNum + 52; //adding a number to variable
@@ -33,17 +33,17 @@ document.write('<br>' + Math.ceil(2.3)); //rounding number up
 document.write('<br>' + Math.floor(7.7)); //rounding number down
 document.write('<br>' + Math.round(6.4)); //rounding number following the rules
 document.write('<br>' + Math.round(3.9));
-document.write('<br>' + Math.abs(-16589)); //module of the number*/
+document.write('<br>' + Math.abs(-16589)); //module of the number
 
-/*var colors = ['Red', 'Green', 'Blue']; //creating an array
+var colors = ['Red', 'Green', 'Blue']; //creating an array
 document.write('<br>', colors[0]); //first element is numbered as zero fo js
 var cars = new Array('Toyota', 'Zaporozhez', 'Mercedes', 'Lada', 'BMW'); //another way to create an array
 document.write('<br>', cars[3]); //4th element is 3rd for js
 colors[3] = 'Grey'; //addng one more element to array
 document.write('<br>', colors[3]); //4th element is 3rd for js
-colors.push('Purple'); //another way to add element to array*/
+colors.push('Purple'); //another way to add element to array
 
-/*for (var num = 100; num >= 10; num -= 10) { //for cycle | var num = 100 is a value of the condition variable in the beginning | num >= 10 is condition for the ending
+for (var num = 100; num >= 10; num -= 10) { //for cycle | var num = 100 is a value of the condition variable in the beginning | num >= 10 is condition for the ending
     //num -=10 is the cycled action to reach the condition
     console.log(num);
 }
@@ -52,9 +52,9 @@ var numWhile = 5 //variable for while cycle
 while (numWhile < 158) { //condition for cycle would be truth
     numWhile ++; //action to make condition false
     console.log(numWhile);
-}*/
+}
 
-/*numIf = 459 //variable for if/else
+numIf = 459 //variable for if/else
 if (numIf <= 618) { //condition for action
     console.log('It\'s true!'); //action if the condition is truth | the \' construction is used to show the compilator 
     //that the ' symbol in the text is not the ending of text for output in console, but just its part
@@ -77,9 +77,9 @@ else if (15 == 15) { //if first statement is false, additional else if statement
 
 else {
     console.log('Else if isn\'t correct too!'); //this condition wouldn't work, because else if statement is correct
-}*/
+}
 
-/*var bool = true; //variable for if operations with bools
+var bool = true; //variable for if operations with bools
 if (bool) { //this means: if (bool == true)
     console.log(bool + ' is true'); //action for bool == true
 }
@@ -89,12 +89,12 @@ if (!bool) { //means if (bool == false)
 
 else { //this condition would work
     console.log(bool + ' is true!'); //this would run
-}*/
+}
 
-/*var numIf = 362; //first if variable
-var boolIf = true; //second if variable*/
+var numIf = 362; //first if variable
+var boolIf = true; //second if variable
 
-/*if (numIf >= 289 && boolIf != false) { //&& is a symbol to make many conditions needed to run an action. there would be as much && as it's needed for programm
+if (numIf >= 289 && boolIf != false) { //&& is a symbol to make many conditions needed to run an action. there would be as much && as it's needed for programm
     console.log('bool is true and num is bigger than 289 or equal'); //this action would run, because boolIf isn't false and numIf is bigger or equal with 289
 }
 
@@ -104,9 +104,9 @@ if (numIf == 289 || boolIf !=false) { //|| means OR: at least one of conditions 
 
 if (numIf >= 289 && boolIf != false || numIf == 289 || boolIf !=false) { //conditions could combinated, how it's shown here
     console.log('Wow, it works'); //this would run, try to understand why ;)
-}*/
+}
 
-/*switch (numIf) { //switch case is an alternative to if/else if/ else constructions when you need to find a value of variable: switch(numIf) means that we try
+switch (numIf) { //switch case is an alternative to if/else if/ else constructions when you need to find a value of variable: switch(numIf) means that we try
     //to find the value of numIf variable
     case 895: //case 895 means that we check if numIf == 895
         alert('Number is 895!'); //action if numIf == 895 (it wouldn't run)
@@ -116,9 +116,9 @@ if (numIf >= 289 && boolIf != false || numIf == 289 || boolIf !=false) { //condi
     default: //this is alternative of else condition: if there is no correct case, this would run. This case is additional, you may ignore it, if you don't need it
         alert('Number is undefined.'); //this wouldn't run here, because case 362 is true
         break;
-}*/
+}
 
-/*switch (boolIf) { //now let's check bool's value
+switch (boolIf) { //now let's check bool's value
     case false: //it isn't true case
         alert('It\'s false!') //this wouldn't run);
         break;
@@ -127,28 +127,28 @@ if (numIf >= 289 && boolIf != false || numIf == 289 || boolIf !=false) { //condi
     default: //this case would run, because all other cases aren't correct
         alert('Bool is undefined.'); //now we'll see only this message
         break;
-}*/
+}
 
-/*function print(phrase) { //function is needed to do some actions in program manny times in different places | print is name of function, phrase is variable
+function print(phrase) { //function is needed to do some actions in program manny times in different places | print is name of function, phrase is variable
     //that is used in function for its actions and enetred by programmist
     console.log(phrase); //this is action with entered value/variable
 }
 
-/*var phrase = 'Some phrase to show the work of created function'; //example phrase
+var phrase = 'Some phrase to show the work of created function'; //example phrase
 print('Hello world!'); //if you know Python a bit, you would recognize this string
 print(phrase); //another example: we can use some variable instead of string in ''
 print('This is a phrase: ' + phrase) //we also can connect many text elements in this function with +
-print('This is a phrase: ', phrase) //not like this, because here only first phrase would be shown*/
+print('This is a phrase: ', phrase) //not like this, because here only first phrase would be shown
 
-/*function sum(num1, num2) { //a bit more difficult function: two variables to work
+function sum(num1, num2) { //a bit more difficult function: two variables to work
     return num1 + num2; //return means: the function would get this value as variable
 }
 
 var numSum1 = 586; //two variables for test
 var numSum2 = 864;
-print('Sum is ' + sum(numSum1, numSum2)); //sum turns to variable with the value of sum of the two numbers we've given it in brackets*/
+print('Sum is ' + sum(numSum1, numSum2)); //sum turns to variable with the value of sum of the two numbers we've given it in brackets
 
-/*var timur = { //creating an object with a lot of parameters
+var timur = { //creating an object with a lot of parameters
     name: 'Timur', //text parameter
     age: 14, //number parameter
     citizenships: ['Russia', 'Tolland'], //array parameter
@@ -188,7 +188,7 @@ function Parent(role, name, age, gender, work) { //last way to create an obect w
     this.age = age
     this.gender = gender
     this.work = work
-}*/
+}
 
 function changeColor(newColor) { //the function which would be called after clicking the button
     var element = document.getElementById('color_text'); //getting text using its id
