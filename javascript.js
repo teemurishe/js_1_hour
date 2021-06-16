@@ -192,10 +192,22 @@ function Parent(role, name, age, gender, work) { //last way to create an obect w
 
 function changeColor(newColor) { //the function which would be called after clicking the button
     var element = document.getElementById('color_text'); //getting text using its id
-    element.style.color = newColor //giving the element new color
+    element.style.color = newColor; //giving the element new color
 }
 
 function buttonMouse(color) { //another function for coloring buttons when the mouse is over them
-    var buttons = document.getElementsByClassName(buttonColor) //getting all the buttons using their class
-    buttons.style.color = color //coloring the button
+    var buttons = document.getElementsByClassName(buttonColor); //getting all the buttons using their class
+    buttons.style.color = color; //coloring the button
 }
+
+function validateForm () {
+    var element = document.forms["userData"]["username"].value;
+    var tel = document.forms["userData"]["userphone"].value;
+    if (element == '') {
+      alert ("Name field mustn't be empty!");
+      return false;
+    } else if (tel == '') {
+      alert ("Phone field mustn't be empty!");
+      return false;
+    }
+  }
