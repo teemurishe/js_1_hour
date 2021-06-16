@@ -148,7 +148,7 @@ var numSum1 = 586; //two variables for test
 var numSum2 = 864;
 print('Sum is ' + sum(numSum1, numSum2)); //sum turns to variable with the value of sum of the two numbers we've given it in brackets*/
 
-var timur = { //creating an object with a lot of parameters
+/*var timur = { //creating an object with a lot of parameters
     name: 'Timur', //text parameter
     age: 14, //number parameter
     citizenships: ['Russia', 'Tolland'], //array parameter
@@ -188,6 +188,14 @@ function Parent(role, name, age, gender, work) { //last way to create an obect w
     this.age = age
     this.gender = gender
     this.work = work
+}*/
+
+function changeColor(newColor) { //the function which would be called after clicking the button
+    var element = document.getElementById('color_text'); //getting text using its id
+    element.style.color = newColor //giving the element new color
 }
 
-
+function buttonMouse(color) { //another function for coloring buttons when the mouse is over them
+    var buttons = document.getElementsByClassName(buttonColor) //getting all the buttons using their class
+    buttons.style.color = color //coloring the button
+}
